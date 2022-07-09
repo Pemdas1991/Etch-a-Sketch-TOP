@@ -3,9 +3,10 @@
     flex-direction: column;
     align-content: stretch;
     margin: 100px;
-    background-color: pink;
     width: auto;
     height: 900px;
+    border: 2px;
+    border-style: solid;
 }
 
 .line {
@@ -19,6 +20,17 @@
     flex: auto;
     flex-grow: 1;
     border: 1px;
-    border-color: black;
-    border-style: dashed;
+    
+}
+
+.box:hover {
+    background-color: gray;
+}
+
+.clicked {
+    background-color: black;
+}
+
+button {
+    align-self: center;
 }
