@@ -1,0 +1,24 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    margin: 100px;
+    background-color: pink;
+    width: auto;
+    height: 900px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-grow: 1;
+}
+
+.box {
+    flex: auto;
+    flex-grow: 1;
+    border: 1px;
+    border-color: black;
+    border-style: dashed;
+}
