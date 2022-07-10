@@ -3,6 +3,8 @@ let size = 16;
 
 drawGrid(size);
 
+
+
 function drawGrid(size) {
     const grid = document.querySelector('.grid');
 
@@ -27,11 +29,25 @@ function addEventToBoxes() {
     const boxes = document.querySelectorAll('.box')
 
     boxes.forEach(box => {
-        box.addEventListener('click', makeBlack)
+        box.addEventListener('mousedown', makeBlack)
     });
 }
 
 function makeBlack(box) {
-    this.classList.add('clicked');
+    this.classList.toggle('clicked');
 }
+
+function reset(){
+    
+    let newSize = prompt('Enter a grid size', 16)
+
+
+    const lines = document.querySelectorAll('.line');
+
+    lines.forEach(line => {
+        line.remove();
+    });
+
+    drawGrid(newSize);
+};
 

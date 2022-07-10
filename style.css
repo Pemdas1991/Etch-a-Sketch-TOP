@@ -4,7 +4,8 @@
     align-content: stretch;
     margin: 100px;
     width: auto;
-    height: 900px;
+    height: 700px;
+    width: 700px;
     border: 2px;
     border-style: solid;
 }
