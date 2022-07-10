@@ -37,10 +37,14 @@ function makeBlack(box) {
     this.classList.toggle('clicked');
 }
 
-function reset(){
-    
-    let newSize = prompt('Enter a grid size', 16)
+function reset() {
 
+    let newSize = prompt('Enter a grid size < 100', 16)
+
+    if (newSize > 100 || newSize < 0) {
+        alert('Grid size must be between 1 and 100');
+        return;
+    }
 
     const lines = document.querySelectorAll('.line');
 
